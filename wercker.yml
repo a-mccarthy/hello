@@ -25,14 +25,14 @@ dev:
 build:
  steps:
   - setup-go-workspace:
-    package-dir:github.com/hello
+     package-dir:github.com/hello
 
   - scripts:
      name: env
      code: env
 
   - script:
-     got get
+     name: go get
      code: |
       cd $WERCKER_SOURCE_DIR
       go version
