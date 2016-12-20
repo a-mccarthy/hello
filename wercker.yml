@@ -3,7 +3,7 @@ box: golang
 dev:
  steps:
   - setup-go-workspace:
-     package-dir: github.com/hello
+     package-dir: github.com/amccarthy/hello
 
   - script:
      name: env
@@ -14,7 +14,7 @@ dev:
      code: |
       cd $WERCKER_SOURCE_DIR
       go version
-      go get -u github.com/MASTERminds/glide
+      go get -u github.com/Masterminds/glide
       export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
       glide install
 
@@ -25,7 +25,7 @@ dev:
 build:
  steps:
   - setup-go-workspace:
-     package-dir:github.com/hello
+     package-dir:github.com/amccarthy/hello
 
   - scripts:
      name: env
@@ -36,7 +36,7 @@ build:
      code: |
       cd $WERCKER_SOURCE_DIR
       go version
-      go get -u github.com/MASTERminds/glide
+      go get -u github.com/Masterminds/glide
       export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
       glide install 
 
