@@ -48,3 +48,27 @@ dev:
       internal/watch: 
         code: "go run main.go"
         reload: true
+
+deploy:
+
+ steps:
+  - 
+    internal/docker-push:
+     username: $DOCKER_USERNAME
+     password: $DOCKER_PASSWORD
+     cmd: /pipeline/source/hello
+     port: "8080"
+     tag: latest
+     repository: hello
+     registry: hhtps://registry.hub.docker.com
+
+
+
+
+
+
+
+
+
+
+
