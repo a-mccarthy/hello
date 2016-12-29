@@ -60,7 +60,7 @@ deploy:
      port: "8080"
      tag: latest
      repository: akmccarthy/hello
-     registry: hhtps://registry.hub.docker.com
+     registry: https://registry.hub.docker.com
 
 
 
