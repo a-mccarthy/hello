@@ -59,7 +59,7 @@ deploy:
      cmd: /pipeline/source/hello
      port: "8080"
      tag: latest
-     repository: hello
+     repository: akmccarthy/hello
      registry: hhtps://registry.hub.docker.com
 
 
